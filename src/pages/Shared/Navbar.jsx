@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  
   return (
     <nav className="bg-gradient-200 shadow-2xl">
       <div className="container mx-auto px-4 lg:px-8 flex items-center justify-between py-4">
