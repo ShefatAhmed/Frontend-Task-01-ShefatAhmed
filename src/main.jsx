@@ -3,11 +3,22 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Main from "./Layout/Main";
+import AllProducts from "./pages/AllProducts/AllProducts";
+import ViewCart from "./pages/ViewCart/ViewCart";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main />,
-    children: [{}],
+    children: [
+      {
+        path: "/",
+        element: <AllProducts />,
+      },
+      {
+        path: "/cart",
+        element: <ViewCart />,
+      },
+    ],
   },
 ]);
 
